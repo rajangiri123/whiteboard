@@ -1,7 +1,7 @@
 # Backend configuration
 backend:
   # Access token required for interacting with the server -- string (empty string for no restrictions)
-  accessToken: ""
+  accessToken: "ww5GOghHiOx8uD8Ce9kTBOyRkSYS442Y9i8D"
 
   # Enable the function to save to a webdav-server (check README for more info) -- boolean
   enableWebdav: false
