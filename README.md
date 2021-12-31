@@ -5,6 +5,7 @@ This is a lightweight NodeJS collaborative Whiteboard/Sketchboard which can easi
 ![start](./doc/start.png)
 
 ## Demowhiteboard
+https://ecswb.virtusasystems.com/?whiteboardid=myNewWhiteboard&accesstoken=vss
 
 [HERE](https://cloud13.de/testwhiteboard/) (Reset every night)
 
