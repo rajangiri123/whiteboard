@@ -51,7 +51,7 @@ function main() {
     signaling_socket = io("", { path: subdir + "/ws-api" }); // Connect even if we are in a subdir behind a reverse proxy
 
     signaling_socket.on("connect", function () {
-        console.log(process.env.accessKeyId);
+        console.log("accessKeyId", process.env.accessKeyId);
         console.log("Websocket connected!");
 
         signaling_socket.on("whiteboardConfig", (serverResponse) => {
