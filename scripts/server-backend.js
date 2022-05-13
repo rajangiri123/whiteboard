@@ -161,6 +161,13 @@ function startBackendServer(port) {
         res.status(200);
         res.end();
     });
+    app.post("/api/resetJSON", function (req, res) {
+        const wid = req.body.wid;
+        const jsonData = req.body.jsonData;
+        s_whiteboard.resetJSON(wid, jsonData);
+        res.status(200);
+        res.end();
+    });
 
     /**
      * @api {get} /api/drawToWhiteboard Draw on the Whiteboard

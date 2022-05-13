@@ -152,6 +152,19 @@ module.exports = {
             }
         });
     },
+    resetJSON: function (wid, jsonData) {
+        const path = fileDatabasePath(wid);
+        try {
+            if (fs.existsSync(path)) {
+                fs.unlink(path);
+            }
+        } catch (err) {}
+        fs.writeFile(path, JSON.stringify(jsonData), (err) => {
+            if (err) {
+                return console.log(err);
+            }
+        });
+    },
     // Load saved whiteboard
     loadStoredData: function (wid) {
         if (wid in savedBoards) {
