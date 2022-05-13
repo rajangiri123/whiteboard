@@ -141,7 +141,7 @@ module.exports = {
                             }
                         );
                     }
-                }, 1000 * 10); //Save after 10 sec
+                }, 1000 * 10);
             }
         }
     },
