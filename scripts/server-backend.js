@@ -4,6 +4,7 @@ const config = require("./config/config");
 const ReadOnlyBackendService = require("./services/ReadOnlyBackendService");
 const WhiteboardInfoBackendService = require("./services/WhiteboardInfoBackendService");
 const { getSafeFilePath } = require("./utils");
+const bodyParser = require("body-parser");
 
 function startBackendServer(port) {
     var fs = require("fs-extra");
@@ -150,6 +151,15 @@ function startBackendServer(port) {
             //End file upload
         });
         form.parse(req);
+    });
+
+    app.use(bodyParser());
+    app.post("/api/saveJSON", function (req, res) {
+        const wid = req.body.wid;
+        const jsonData = req.body.jsonData;
+        s_whiteboard.saveJSON(wid, jsonData);
+        res.status(200);
+        res.end();
     });
 
     /**

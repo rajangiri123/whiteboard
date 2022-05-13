@@ -145,6 +145,13 @@ module.exports = {
             }
         }
     },
+    saveJSON: function (wid, jsonData) {
+        fs.writeFile(fileDatabasePath(wid), JSON.stringify(jsonData), (err) => {
+            if (err) {
+                return console.log(err);
+            }
+        });
+    },
     // Load saved whiteboard
     loadStoredData: function (wid) {
         if (wid in savedBoards) {
