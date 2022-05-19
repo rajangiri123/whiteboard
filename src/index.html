@@ -4,6 +4,7 @@
         <title>Whiteboard</title>
         <meta charset="utf-8" />
         <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico" />
+        <style></style>
     </head>
 
     <body style="display: none">
@@ -11,17 +12,17 @@
         <div id="whiteboardContainer"></div>
 
         <!---Toolbar -!-->
-        <div id="toolbar" style="position: absolute; top: 10px; left: 10px">
+        <div id="toolbar" class="toolbar-whiteboard">
             <div class="btn-group">
                 <button
+                    class="btn-lock active"
                     id="whiteboardLockBtn"
-                    style="background-color: orange"
                     title="View and Write"
                     type="button"
                 >
                     <i class="fa fa-lock"></i>
                 </button>
-                <button id="whiteboardUnlockBtn" title="View Only" type="button">
+                <button class="btn-unlock" id="whiteboardUnlockBtn" title="View Only" type="button">
                     <i class="fa fa-lock-open"></i>
                 </button>
             </div>
