@@ -52,7 +52,6 @@
                     <i class="fa fa-mouse-pointer"></i>
                 </button>
                 <button
-                    style="padding-bottom: 11px"
                     tool="recSelect"
                     title="Select an area"
                     type="button"
@@ -68,13 +67,7 @@
                 >
                     <i class="fa fa-pencil-alt"></i>
                 </button>
-                <button
-                    style="padding-bottom: 8px; padding-top: 6px"
-                    tool="line"
-                    title="draw a line"
-                    type="button"
-                    class="whiteboard-tool"
-                >
+                <button tool="line" title="draw a line" type="button" class="whiteboard-tool">
                     ╱
                 </button>
                 <button tool="rect" title="draw a rectangle" type="button" class="whiteboard-tool">
@@ -89,7 +82,7 @@
             </div>
 
             <div class="btn-group whiteboard-edit-group">
-                <button style="width: 190px; cursor: default">
+                <button style="width: 125px; cursor: default">
                     <div
                         class="activeToolIcon"
                         style="position: absolute; top: 2px; left: 2px; font-size: 0.6em"
@@ -97,19 +90,13 @@
                         <i class="fa fa-pencil-alt"></i>
                     </div>
                     <img
-                        style="
-                            position: absolute;
-                            left: 11px;
-                            top: 16px;
-                            height: 14px;
-                            width: 130px;
-                        "
+                        style="position: absolute; left: 15px; top: 3px; height: 14px; width: 85px"
                         src="./images/slider-background.svg"
                     />
                     <input
                         title="Thickness"
                         id="whiteboardThicknessSlider"
-                        style="position: absolute; left: 9px; width: 130px; top: 15px"
+                        style="position: absolute; left: 15px; width: 85px; top: 3px"
                         type="range"
                         min="1"
                         max="50"
@@ -119,10 +106,10 @@
                         id="whiteboardColorpicker"
                         style="
                             position: absolute;
-                            left: 155px;
-                            top: 10px;
-                            width: 26px;
-                            height: 23px;
+                            left: 104px;
+                            top: 2px;
+                            width: 15px;
+                            height: 15px;
                             border-radius: 3px;
                             border: 1px solid darkgrey;
                         "
@@ -263,19 +250,21 @@
 
             <div class="btn-group minGroup">
                 <button
-                    style="width: 100%; padding: 11px 11px"
+                    style="
+                        width: 25px;
+                        padding: 0;
+                        display: inline-flex;
+                        justify-content: center;
+                        align-items: center;
+                    "
                     id="minMaxBtn"
                     title="hide buttons"
                     type="button"
                 >
-                    <i
-                        id="minBtn"
-                        style="position: relative; left: -5px"
-                        class="fas fa-angle-left"
-                    ></i>
+                    <i id="minBtn" style="position: relative" class="fas fa-angle-left"></i>
                     <i
                         id="maxBtn"
-                        style="position: relative; left: -5px; display: none"
+                        style="position: relative; display: none"
                         class="fas fa-angle-right"
                     ></i>
                 </button>
