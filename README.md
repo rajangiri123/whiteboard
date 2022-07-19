@@ -6,6 +6,8 @@ This is a lightweight NodeJS collaborative Whiteboard/Sketchboard which can easi
 
 ## Demowhiteboard
 
+https://ecswb.virtusasystems.com/?whiteboardid=myNewWhiteboard&accesstoken=vss
+
 [HERE](https://cloud13.de/testwhiteboard/) (Reset every night)
 
 ## Some Features
@@ -221,7 +223,5 @@ Note: You might have to serve the app with https (If your nextcloud server runs 
 Upload both icons present at /doc/nextcloud_icons/ to your nextcloud at the "external sites" admin section. Then set it as symbol on your link.
 
 **_ MIT License _**
-
-Google Authentication for sign in and sign up
-
-{"web":{"client_id":"439238021278-25utnl4jr8q8c92la77artbbp449334l.apps.googleusercontent.com","project_id":"talentacademy","auth_uri":"https://accounts.google.com/o/oauth2/auth","token_uri":"https://oauth2.googleapis.com/token","auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs","client_secret":"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","redirect_uris":["https://shwetaboard.com/"],"javascript_origins":["https://shwetaboard.com"]}}
+testing
+testing again

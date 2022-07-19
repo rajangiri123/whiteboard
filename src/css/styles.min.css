@@ -1,0 +1,52 @@
+.toolbar-whiteboard {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    background-color: #add8e6;
+    padding: 3px 3px 3px 6px;
+    border: solid 1px #add8e6;
+}
+.toolbar-whiteboard .btn-group {
+    margin-right: 5px;
+    position: relative;
+    display: flex;
+}
+.toolbar-whiteboard .btn-group button {
+    background: #f7f7f7;
+    color: #212121;
+    padding: 0;
+    outline: 0;
+    transition: all ease-in-out 0.35s;
+    height: 20px;
+    width: 20px;
+    border-radius: 3px;
+    border: solid 1px #e1e1e1;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 2px;
+    font-size: 10px;
+}
+.toolbar-whiteboard .btn-group button.active {
+    background-color: #0d6efd;
+    color: #fff;
+}
+.toolbar-whiteboard .btn-group button:hover {
+    background-color: #0d6efd;
+    color: #fff;
+}
+.toolbar-whiteboard .btn-group:last-child {
+    margin-right: 0;
+}
+.toolbar-whiteboard .btn-lock.active {
+    background-color: darkred !important;
+}
+.toolbar-whiteboard .whiteboard-edit-group.group-disabled button:disabled,
+.toolbar-whiteboard .whiteboard-edit-group.group-disabled button[disabled] {
+    border: 1px solid #999;
+    background-color: #ccc;
+    color: #666;
+}
+.toolbar-whiteboard .whiteboard-edit-group.group-disabled > * {
+    pointer-events: none;
+}
