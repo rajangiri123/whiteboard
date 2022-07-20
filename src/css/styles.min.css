@@ -50,3 +50,10 @@
 .toolbar-whiteboard .whiteboard-edit-group.group-disabled > * {
     pointer-events: none;
 }
+@media only screen and (min-width: 320px) {
+    #toolbar-whiteboard .btn-group button {
+        height: 103%;
+        width: 46px;
+        font-size: 173%;
+    }
+}
