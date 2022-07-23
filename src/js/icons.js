@@ -25,6 +25,7 @@ import {
 import {
     faSquare,
     faCircle,
+    faRefresh,
     faFile,
     faFileAlt,
     faPlusSquare,

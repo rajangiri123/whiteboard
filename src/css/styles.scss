@@ -15,16 +15,16 @@
     button {
       background: #f7f7f7;
       color: #212121;
-      padding: 10px;
+      padding: 5px;
       outline: 0;
       transition: all ease-in-out 0.35s;
-      height: 40px;
-      width: 40px;
-      border-radius: 5px;
-      border: solid 1px #e1e1e1;
+      height: 20px;
+      width: 20px;
+      border-radius: 2.5px;
+      border: solid 0.5px #e1e1e1;
       cursor: pointer;
       display: inline-block;
-      margin-right: 1px;
+      margin-right: 0.5px;
 
       &.active {
         background-color: #0d6efd;

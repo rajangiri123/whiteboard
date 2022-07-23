@@ -6,7 +6,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-color: #add8e6;
+    /* background-color: #add8e6; */
     padding: 10px 15px;
     border: solid 1px #add8e6;
 }
@@ -17,15 +17,15 @@
 }
 
 .toolbar-whiteboard .btn-group button {
-    background: #f7f7f7;
+    /* background: #f7f7f7; */
     color: #212121;
-    padding: 10px;
+    padding: 2.5px;
     outline: 0;
     -webkit-transition: all ease-in-out 0.35s;
     transition: all ease-in-out 0.35s;
-    height: 40px;
-    width: 40px;
-    border-radius: 5px;
+    height: 20px;
+    width: 20px;
+    border-radius: 2.5px;
     border: solid 1px #e1e1e1;
     cursor: pointer;
     display: inline-block;
@@ -53,7 +53,7 @@
 .toolbar-whiteboard .whiteboard-edit-group.group-disabled button:disabled,
 .toolbar-whiteboard .whiteboard-edit-group.group-disabled button[disabled] {
     border: 1px solid #999999;
-    background-color: #cccccc;
+    /* background-color: #cccccc; */
     color: #666666;
 }
 

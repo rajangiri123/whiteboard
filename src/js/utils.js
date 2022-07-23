@@ -25,3 +25,10 @@ export function getSubDir() {
 
     return subdir;
 }
+
+export function getWBDataURL() {
+    console.log(window.location.host);
+    return window.location.host == "localhost:8080"
+        ? "http://localhost:8072/vss/vcp-admin-ui/api/question_wb_data"
+        : "https://admin.talentacad.com/api/question_wb_data";
+}

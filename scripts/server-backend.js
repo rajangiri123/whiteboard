@@ -25,7 +25,7 @@ function startBackendServer(port) {
     var server = require("http").Server(app);
     server.listen(port);
     var io = require("socket.io")(server, { path: "/ws-api" });
-    WhiteboardInfoBackendService.start(io);
+    var _WhiteboardInfoBackendService = WhiteboardInfoBackendService.start(io);
 
     console.log("Webserver & socketserver running on port:" + port);
 

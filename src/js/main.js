@@ -7,7 +7,7 @@ import { dom } from "@fortawesome/fontawesome-svg-core";
 import shortcutFunctions from "./shortcutFunctions";
 import ReadOnlyService from "./services/ReadOnlyService";
 import InfoService from "./services/InfoService";
-import { getSubDir } from "./utils";
+import { getSubDir, getWBDataURL } from "./utils";
 import ConfigService from "./services/ConfigService";
 import { v4 as uuidv4 } from "uuid";
 
@@ -579,6 +579,30 @@ function initWhiteboard() {
             reader.readAsText(file);
             $(this).val("");
         });
+        $("#resetWhiteboardDataBtn")
+            .off("click")
+            .click(() => {
+                try {
+                    const WBDataURL = getWBDataURL();
+                    $.post(
+                        WBDataURL,
+                        {
+                            wid: "L2GEOCRCL-Q16",
+                        },
+                        function (result) {
+                            if (result.wb_json_data) {
+                                whiteboard.clearWhiteboard();
+                                var j = JSON.parse(result.wb_json_data);
+                                console.log("j", j);
+                                whiteboard.loadJsonData(j);
+                            }
+                            alert("Data Resetted!!!");
+                        }
+                    );
+                } catch (e) {
+                    showBasicAlert("Invalid JSON!");
+                }
+            });
 
         // On thickness slider change
         $("#whiteboardThicknessSlider").on("input", function () {
