@@ -584,10 +584,12 @@ function initWhiteboard() {
             .click(() => {
                 try {
                     const WBDataURL = getWBDataURL();
+                    let _wid = urlParams.get("whiteboardid").toString().split("-");
+                    _wid = _wid[1] + "-" + _wid[2].toString().replace("I", "");
                     $.post(
                         WBDataURL,
                         {
-                            wid: "L2GEOCRCL-Q16",
+                            wid: _wid,
                         },
                         function (result) {
                             if (result.wb_json_data) {
