@@ -119,7 +119,9 @@ module.exports = {
                     }
                 }
             }
-            savedBoard.push(content);
+            if (Array.isArray(savedBoard)) {
+                savedBoard.push(content);
+            }
         }
         this.saveToDB(wid);
     },
